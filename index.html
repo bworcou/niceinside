@@ -17,6 +17,24 @@
     $("#contact").click(function(){
       $(".contactcopy").slideToggle();
   });
+  $("#heading").click(function(){
+    $(".sidebar").slideToggle();
+});
+
+  $(function () {
+    $('#info').click(function () {
+        $('.content').next('div').slideToggle();
+
+        $(this).parent().siblings().children().next().slideUp();
+        return false;
+    });
+});
+
+$(document).ready(function() {
+			var colors = ["#9995BF", "#999579", "#C19579",];
+			var rand = Math.floor(Math.random() * colors.length);
+			$('body').css("background-color", colors[rand]);
+});
     });
 
   //       $(document).ready(function() {
@@ -44,49 +62,86 @@
   </script>
 </head>
   <body>
+
     <div id="acknowledge">
-      <h3>
+      <h3 style="color: black;">
         itsniceinside acknowledges the Wurundjeri-Willam people of the Kulin nation as the traditional custodians of the land on which we live and work. we acknowledge their continuing connection to land, waterways and community and pay our respects to Elders past, present and emerging.
       </h3>
     </div>
+    <article><p>It's Nice Inside</p></article>
+
 <nav>
+  <!-- <div class="blackdot"></div> -->
   <div class="menu">
     <div class="menuitem">
-      <div id="heading"><h1><p>It's Nice Inside</p></h1>
-      </div>
+      <div id="heading"><h1><p>IT'S NICE INSIDE</p></h1></div>
     </div>
     <div class="menuitem">
-      <div id="shop"><h1><p>Shop<br></p></h1>
-      </div>
+      <div id="shop"><h1><p>Shop<br></p></h1></div>
     </div>
     <div class="menuitem">
-      <div id="consign"><h1><p>Consignment<br></p></h1>
-      </div>
+      <div id="consign"><h1><p>Consignment<br></p></h1></div>
     </div>
     <div class="menuitem">
-      <div id="contact"><h1><p>Contact<br></p></h1>
-      </div>
+      <div id="contact"><h1><p>Contact<br></p></h1></div>
     </div>
     <div class="menuitem">
-      <div id="info"><h1><p>Info<br></p></h1>
-      </div>
+      <div id="info"><h1><p>Info</p></h1></div>
     </div>
   </div>
   </nav>
 
-  <!-- <button>Click me to show more text</button>
-  <p>I am more text</p> -->
+  <a href="index.html"><div class="blackdot"></div></a>
+  <div class="sidebar">
+    <article>
+      <h3>It's Nice Inside is a furniture shop and online store based in Melbourne, Australia. It's Nice Inside sells used and refurbished mid-century furniture. Our shop is open via appointment only at 250 johnston street, abbotsford melbourne, victoria,  3067.
+    <br><br>itsniceinside acknowledges the Wurundjeri-Willam people of the Kulin nation as the traditional custodians of the land on which we live and work. we acknowledge their continuing connection to land, waterways and community and pay our respects to Elders past, present and emerging.
+    <br><br>If you'd like to get in touch, email info@itsniceinside.com.au  or call 0433359236.
+    <br><br>
+    <article style="text-align: center">SELL WITH US</article><br>
+    if you would like to consign an item with us enquire below by attaching photos of the item/s you would like to sell, with a brief description including the following information:
+
+    brand, makers mark or tag (if applicable)
+    condition, please note and photograph any wear
+    age (if known)
+    location
+
+    based on the information provided, you will be notified within 2 business days whether the item/s will be consigned. if so we will  make arrangments to inspect the item/s and arrange appropriate pick up and storage. once the sale price is agreed upon, you will be asked to sign a consignment agreement defining the agreed terms and conditions and the item/s will be listed online.
+    once an item is picked up by us and taken into our care we will do an appraisal, take photos, provide storage and offer delivery of the item upon sale. once a consigned item is purchased you will be notified within 2 business days and a payment will be made to you within 7 days.
+    <br><br>
+    <article style="text-align: center">RETURNS<br><br></article>
+    All online sales received through our website and instagram are final, itsniceinside does not offer returns or refunds once payment has been received. all pieces are sold as-is, we strive to describe the wear on each item as best as possible and urge people to physically inspect items before purchasing.
+    some of the items we source can be over fifty years old, so understand they are not in new condition. pieces are priced accordingly to their wear so please take this into consideration. please measure accurately before purchasing an item to ensure it is correct for your space
+    :~)
+    <br><br><article style="text-align: center">PICK-UP</article><br>
+    Sold items must be picked up within 7 days of purchase. pick up is available via appointment from our abbotsford showroom. storage of more than seven days will incur a fee dependant on the square meterage of the purchased item, please contact us for a quote. if an item is not picked up after 30 days without prior agreements we reserve the right to re-list the item.
+    <br><br><article style="text-align: center">LOCAL DELIVERY</article><br>
+    Delivery and interstate shipping are not calculated at the checkout. we offer delivery within a 50km radius of narrm/melbourne cbd. please feel free to contact us for a quote.
+    <br><br><article style="text-align: center">SHIPPING</article><br>
+    Interstate shipping can be organised by the buyer, itsniceinside has no liability for damages incurred through interstate shipping. we are here to help facilitate delivery though are not held responsible for any mishaps, we urge customers to use couriers with insurance.
+    <br><br><article style="text-align: center">CONTACT</article>
+    <br>info@itsniceinside.com.au<br>
+    250 johnston street, abbotsford<br>
+    melbourne, victoria,  3067<br>
+    open via appointment<br>
+    Instagram<br><br>
+    itsniceinside acknowledges the Wurundjeri-Willam people of the Kulin nation as the traditional custodians of the land on which we live and work. we acknowledge their continuing connection to land, waterways and community and pay our respects to Elders past, present and emerging.
+
+      </h3>
+  </article>
+</div>
+
 <div class="content">
   <div class="infocopy">
-        <h3><p>RETURNS</p></h3><br>
+        <p class style="text-align: center">RETURNS</p><br><div class="line"></div>
         <h2><p>All online sales received through our website and instagram are final, itsniceinside does not offer returns or refunds once payment has been received. all pieces are sold as-is, we strive to describe the wear on each item as best as possible and urge people to physically inspect items before purchasing.
         some of the items we source can be over fifty years old, so understand they are not in new condition. pieces are priced accordingly to their wear so please take this into consideration. please measure accurately before purchasing an item to ensure it is correct for your space
-        :~)</h2><br><br>
-        <h3><p>PICK-UP</p></h3><br>
+        :~)</h2>
+        <p class style="text-align: center">PICK-UP</p><br><div class="line"></div>
         <h2><p>Sold items must be picked up within 7 days of purchase. pick up is available via appointment from our abbotsford showroom. storage of more than seven days will incur a fee dependant on the square meterage of the purchased item, please contact us for a quote. if an item is not picked up after 30 days without prior agreements we reserve the right to re-list the item.
-        </h2><br><br><h3><p>LOCAL DELIVERY</p></h3><br>
+        </h2><p class style="text-align: center">LOCAL DELIVERY</p></h3><br><div class="line"></div>
         <h2><p>Delivery and interstate shipping are not calculated at the checkout. we offer delivery within a 50km radius of narrm/melbourne cbd. please feel free to contact us for a quote.
-        </p></h2><br><br><h3><p>SHIPPING</p></h3><br>
+        </p></h2><p class style="text-align: center">SHIPPING</p><br><div class="line"></div>
         <h2><p>Interstate shipping can be organised by the buyer, itsniceinside has no liability for damages incurred through interstate shipping. we are here to help facilitate delivery though are not held responsible for any mishaps, we urge customers to use couriers with insurance.</div>
         </p></h2>
 </div>
@@ -122,5 +177,11 @@
       <p>
 </div>
 </div>
+
+<div class="images">
+  <li><img src="assets/images/chair-01.jpg" style="width: 300px"></img></li>
+  <li><img src="assets/images/chair-02.jpg" style="width: 700px"></img></li>
+  <li><img src="assets/images/chair-03.jpg" style="width: 400px"></img></li>
+  </div>
 </body>
 </html>
