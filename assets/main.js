@@ -43,14 +43,22 @@
 // menuitem.addEventListener('click', menuitemClicked)
 // }
 
-$(document).ready(function(){
-  $("#info").click(function(){
-  $(".infocopy").slideToggle();
-});
-  $("#consign").click(function(){
-    $(".consigncopy").slideToggle();
-});
-$("#contact").click(function(){
-$(".contactcopy").slideToggle();
-});
+// $(document).ready(function(){
+//   $("#heading").click(function(){
+//   $(".info").slideToggle();
+// });
+//   $("#consign").click(function(){
+//     $(".consigncopy").slideToggle();
+// });
+// $("#contact").click(function(){
+// $(".contactcopy").slideToggle();
+// });
+
+// $(document).ready(function(){
+//
+//     // $(".info").hide();
+//
+//     $("#heading").click(function(){
+//         $(".info").Toggle('.open');
+//     });
 });
