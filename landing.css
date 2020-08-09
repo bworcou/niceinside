@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100em;
+}
+
+@font-face{
+  font-family: 'RJAkzidenzGrotesk-Regular';
+  src: url('./assets/fonts/RJAkzidenzGrotesk-Regular.otf') format('otf');
+}
+
+@font-face{
+  font-family: 'Compagnon-Light';
+  src: url('./assets/fonts/Compagnon-Light.otf') format('otf');
+}
+
+h1{
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+
+.menu{
+  display: inline-block;
+  position: sticky;
+  top: 0;
+}
+
+.nav{
+  height: 50vh;
+
+}
+
+.img-background{
+  position: relative;
+  display: inline-block;
+  top 0;
+}

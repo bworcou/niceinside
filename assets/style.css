@@ -34,11 +34,8 @@ body{
   margin: 0px;
   padding: 0px;
   background-color: white;
-  overflow: hidden;
 }
 
-p{
-}
 
 h1{
   font-family: 'IO';
@@ -62,52 +59,50 @@ p:hover{
 }
 
 nav{
-  z-index: 100;
+    height: 100%;
+    overflow: auto;
+}
+
+img:hover{
+  mix-blend-mode: multiply;
+  opacity: 1;
+}
+
+img{
+  mix-blend-mode: multiply;
+  display: inline-block;
+  filter: blur(4px);
 }
 
 #acknowledge{
   position: sticky;
-  /* display: inline-block; */
+  display: inline-block;
   top: 0;
   background-color: rgb(242, 97, 45);
   text-align: center;
   padding: 10px;
-  /* border-bottom: 1px solid black; */
 }
 
 .menu{
   position: sticky;
   text-align: center;
-  margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
-  display: inline-block;
+  /* margin: 0 auto; */
+  /* width: 100vw;
+  height: 100vh; */
+  /* display: block;
+  top: 0; */
+  position: sticky;
+  /* display: inline; */
   top: 0;
+  /* height: 100vh;
+  width: 100vw; */
 }
-
-.sidebar::-webkit-scrollbar {
-  display: none;
-}
-  img:hover{
-    mix-blend-mode: multiply;
-    opacity: 1;
-  }
-
-  img{
-    mix-blend-mode: multiply;
-    display: inline-block;
-    filter: blur(4px);
-
-  }
 
 .images{
   mix-blend-mode: multiply;
-  /* width: 100vw;
-  height: 100vh; */
-  right: 0;
-  position: absolute;
   top: 0;
-
+  position: absolute;
+  display: inline-block;
 }
 
 #sidebarmain{
@@ -120,4 +115,9 @@ nav{
   padding: 1.5vw;
   height: 100vh;
   overflow: scroll;
+}
+
+
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
