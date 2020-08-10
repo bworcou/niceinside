@@ -7,6 +7,7 @@
 
 html {
   font-size: 10px;
+  --large: 5rem;
 }
 
 body{
@@ -25,8 +26,8 @@ body{
   src: url('./assets/fonts/Compagnon-Light.otf') format('otf');
 }
 
-h1{
-  font-size: 5rem;
+h1 {
+  font-size: var(--large);
   line-height: 5.5rem;
 }
 
@@ -37,9 +38,11 @@ h1{
 }
 
 .nav{
-  height: 50vh;
-
+  /* height: 50vh; */
 }
+ nav a {
+   font-size: var(--large);
+ }
 
 .img-background{
   position: relative;

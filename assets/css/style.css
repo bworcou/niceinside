@@ -7,27 +7,28 @@
 
 @font-face{
   font-family: 'RJFutura-MonoRegular';
-  src: url('./assets/fonts/RJFutura-MonoRegular.otf') format('otf');
+  src: url('../fonts/RJFutura-MonoRegular.otf') format('otf');
 }
 
 @font-face{
   font-family: 'RJFutura-CondensedRegular';
-  src: url('./assets/fonts/RJFutura-CondensedRegular.otf') format('otf');
+  src: url('../fonts/RJFutura-CondensedRegular.otf') format('otf');
 }
 
 @font-face{
   font-family: 'RJAkzidenzGrotesk-Regular';
-  src: url('./assets/fonts/RJAkzidenzGrotesk-Regular.otf') format('otf');
+  src: url('../fonts/RJAkzidenzGrotesk-Regular.otf') format('otf');
 }
 
 @font-face{
   font-family: 'IO';
-  src: url('./assets/fonts/IO.otf') format('otf');
+  src: url('../fonts/IO.woff');
 }
 
 html {
   font-size: 10vw;
   font-size: 10px;
+  --large: 9vw;
 }
 
 body{
@@ -37,30 +38,47 @@ body{
 }
 
 
-h1{
+h1 {
   font-family: 'IO';
   color: rgb(162, 166, 118);
-  font-size: 9vw;
+  font-size: var(--large);
   line-height: 9.3vw;
 }
 
-h2{
+h2 {
   font-size: 2rem;
 }
 
-h3{
+.acknowledgement {
   font-size: 1vw;
   font-family: courier;
   color: black;
+  position: fixed;
+  display: inline-block;
+  top: 0; left: 0;
+  background-color: rgb(242, 97, 45);
+  text-align: center;
+  padding: 10px;
 }
 
 p:hover{
   color: rgb(102, 106, 148);
 }
 
-nav{
-    height: 100%;
-    overflow: auto;
+nav {
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  padding-top: 5.6rem;
+  width: 100%;
+  z-index: 2;
+}
+nav a {
+  font-family: 'IO';
+  font-size: var(--large);
+  color: rgb(162, 166, 118);
+  display: block;
+  text-align: center;
 }
 
 img:hover{
@@ -74,14 +92,14 @@ img{
   filter: blur(4px);
 }
 
-#acknowledge{
+/* #acknowledge{
   position: sticky;
   display: inline-block;
   top: 0;
   background-color: rgb(242, 97, 45);
   text-align: center;
   padding: 10px;
-}
+} */
 
 .menu{
   position: sticky;
@@ -100,12 +118,13 @@ img{
 
 .images{
   mix-blend-mode: multiply;
-  top: 0;
   position: absolute;
+  top: 0; left: 0;
+  padding-top: 5.6rem;
   display: inline-block;
 }
 
-#sidebarmain{
+#sidebarmain {
   background-color: white;
   width: 40vw;
   position: absolute;
@@ -114,7 +133,8 @@ img{
   border-right: 1px solid black;
   padding: 1.5vw;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  z-index: 10;
 }
 
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>It's Nice Inside</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- <script src="./assets/main.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -16,7 +16,7 @@
 </head>
   <body>
 
-<nav>
+<!-- <nav>
   <div id="acknowledge">
     <h3>
       itsniceinside acknowledges the Wurundjeri-Willam people of the Kulin nation as the traditional custodians of the land on which we live and work. we acknowledge their continuing connection to land, waterways and community and pay our respects to Elders past, present and emerging.
@@ -39,7 +39,21 @@
       <div id="info"><h1><p>INFO</p></h1></div>
     </div>
   </div>
+  </nav> -->
+
+<!--  Just cleaned this top section up a bit. This markup makes more sense given what your intent is (if I understand it correctly, that is) -->
+<header>
+  <span class="acknowledgement">itsniceinside acknowledges the Wurundjeri-Willam people of the Kulin nation as the traditional custodians of the land on which we live and work. we acknowledge their continuing connection to land, waterways and community and pay our respects to Elders past, present and emerging.</span>
+  <nav>
+    <a id="heading" href="#">It’s Nice Inside</a>
+    <a href="#">Shop</a>
+    <a href="#">Consignment</a>
+    <a href="#">Contact</a>
+    <a href="#">Info</a>
   </nav>
+</header>
+
+<!-- All the text below inside the H3 can be <p> tags instead. I'd make the heading a <h2> read this in regards to heirarchy: https://www.w3schools.com/tags/tag_hn.asp -->
 
 <div id="sidebarmain">
   <div id="info">
