@@ -135,6 +135,9 @@ img{
   height: 100vh;
   overflow-y: scroll;
   z-index: 10;
+  font-size: 1vw;
+  font-family: courier;
+  color: black;
 }
 
 
