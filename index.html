@@ -11,6 +11,9 @@
       $("#heading").click(function() {
         $("#sidebarmain").toggle();
       });
+      $('.sidebar-close').on('click', function() {
+        $('#sidebarmain').toggle();
+      })
     });
   </script>
 </head>
@@ -56,6 +59,7 @@
 <!-- All the text below inside the H3 can be <p> tags instead. I'd make the heading a <h2> read this in regards to heirarchy: https://www.w3schools.com/tags/tag_hn.asp -->
 
 <div id="sidebarmain">
+  <span class="sidebar-close">(close)</span>
   <div id="info">
     <h3 style="font-size: 1.4rem;">ITS NICE INSIDE<br><br>It's Nice Inside is a furniture shop and online store based in Melbourne, Australia. It's Nice Inside sells used and refurbished mid-century furniture. Our shop is open via appointment only at 250 johnston street, abbotsford melbourne, victoria,  3067.
   <br><br>itsniceinside acknowledges the Wurundjeri-Willam people of the Kulin nation as the traditional custodians of the land on which we live and work. we acknowledge their continuing connection to land, waterways and community and pay our respects to Elders past, present and emerging.

@@ -140,6 +140,17 @@ img{
   color: black;
 }
 
+.sidebar-close {
+  position: absolute;
+  top: 1.5em; right: 1.5em;
+  text-transform: uppercase;
+}
+
+.sidebar-close:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+
 
 .sidebar::-webkit-scrollbar {
   display: none;
